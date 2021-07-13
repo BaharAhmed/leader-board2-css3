@@ -85,6 +85,7 @@ top blog styles
 /*-----------
  Courses Styles 
  -------------*/
+
  .courses{
      display: grid;
      grid-template-columns: repeat(3,1fr);
@@ -117,3 +118,36 @@ top blog styles
     padding: 5px;
     border-radius: 15px;
 }
+/*---------------------
+     Media Queries
+------------------------- */
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+   .container{
+    width: 100%;
+   }
+   .players, .blogs, .courses{ 
+       
+       grid-template-columns: repeat(1,1fr);
+   }
+   .player, .blog{
+       flex-direction: column;
+   }
+   
+    
+} 
+ /*------------------
+    tablate Devices
+ ------------------ */
+ @media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    } 
+    .players, .courses{
+        grid-template-columns: repeat(2,1fr);
+       
+     }
+    
+     
+ }
+
