@@ -38,8 +38,7 @@ hr{
     grid-row-gap: 30px ;
 }
 .player{
-    display: flex;
-    align-items: center;
+    
 
 }
 .player img{
